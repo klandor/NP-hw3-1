@@ -1,13 +1,287 @@
 #include <iostream>
 #include <cstdio>
+#include <sstream>
+#include <map>
+#include <sys/types.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <netdb.h>
+#include <fcntl.h>
+#include <errno.h>
+
+#define SERVER_NUM 5
 using namespace std;
+
+int readline(int fd,char *ptr,int maxlen)
+{
+	int n,rc;
+	char c;
+	*ptr = 0;
+	for(n=1;n<maxlen;n++)
+	{
+		if((rc=read(fd,&c,1)) == 1)
+		{
+			*ptr++ = c;
+			if(c=='\n')  break;
+		}
+		else if(rc==0)
+		{
+			if(n==1)     
+				return(0);
+			else {
+				n--;
+				break;
+			}
+		}
+		else if(n==1)
+			return(-1);
+		else {
+			n--;
+			break;
+		}
+
+	}
+	
+//	if ( n>0 && *(--ptr) == '\n') {
+//		n--;
+//		if (n>0 && *(--ptr) == '\r') {
+//			n--;
+//		}
+//	}
+	return(n);
+}   
+
+void print_column(int i, string s){
+	cout << "<script>document.all['m"<< i+1 <<"'].innerHTML += \"" << s<< "<BR>\";</script>"<<endl;
+}
+
 int main (int argc, char * const argv[]) {
+	
+	signal(SIGPIPE, SIG_IGN);
 	cout << "Content-type: text/html\n\n";
-	cout << "<html><head></head><body>"
+	cout << "<html><head>\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=big5\" />\n"
+		<< "<title>Network Programming Homework 3</title>\n</head>\n<body bgcolor=#336699>\n"
+		<< "<font face=\"Courier New\" size=2 color=#FFFF99>\n";
+	// generate table
+	cout << "<table width=\"800\" border=\"1\">\n<tr>\n";
+	for (int i=0; i<SERVER_NUM; i++) {
+		cout << "<td valign=\"top\" id=\"title"<<i+1<<"\">Server "<< i+1 <<": </td>";
+	}
+	cout << "\n<tr>\n";
+	for (int i=0; i<SERVER_NUM; i++) {
+		cout << "<td valign=\"top\" id=\"m"<<i+1<<"\"></td>";
+	}
+	cout << "\n</table></font>\n";
+	
+	
 	string s1,s2;
-	while( getline(cin, s1, '=') ){
+	
+	char write_buffer[SERVER_NUM][50000];
+	int begin[SERVER_NUM], end[SERVER_NUM];
+	map<string,string> args;
+	int status[SERVER_NUM], socket_fd[SERVER_NUM];
+	
+	// parse query
+	for(int i=0; i<SERVER_NUM*3-1; i++){
+		getline(cin, s1, '=');
 		getline(cin, s2, '&');
-		cout << s1 << '=' << s2 << "<BR>" <<endl;
+		args[s1] = s2;
+	}
+	
+	getline(cin, s1, '=');
+	if(getline(cin, s2))
+		args[s1] = s2;
+	else
+		args[s1] = "";
+	
+	
+
+	fd_set connecting_fds; 
+	int max_fd = 0;
+	FD_ZERO(&connecting_fds);
+	
+	// preparation
+	for (int i=0; i<SERVER_NUM; i++) {
+		if ( args[string("IP")+(char)(i+'1')] == "" || args[string("PORT")+(char)(i+'1')] == "") // invalid address
+			status[i] = -1;
+		else {  // create socket and connect
+			
+			
+			cout << "<script>document.all['title"<< i+1 <<"'].innerHTML += \"" << args[string("IP")+(char)(i+'1')]
+				<< ":" << args[string("PORT")+(char)(i+'1')]<< "\";</script>";
+			
+			// read the file into the buffer
+			begin[i] = end[i] = 0;
+			if(args[string("FILE")+(char)(i+'1')] != ""){
+				int fd = open(args[string("FILE")+(char)(i+'1')].c_str(), O_RDONLY);
+				if (fd <0) {
+					print_column(i, "File \"" + args[string("FILE")+(char)(i+'1')] + "\" can not be opened.");
+				}
+				else {
+					end[i] = read(fd, write_buffer[i], 50000);
+					if (end[i] < 0) {
+						print_column(i, "File \"" + args[string("FILE")+(char)(i+'1')] + "\" can not be read.");
+						perror("read");
+						end[i] = 0;
+					}
+					close(fd);
+				}
+
+				
+			}
+			
+
+			
+			struct hostent *he = 
+				gethostbyname(args[string("IP")+(char)(i+'1')].c_str());
+			int SERVER_PORT = atoi(args[string("PORT")+(char)(i+'1')].c_str());
+			
+			if (he == NULL || SERVER_PORT == 0) {
+				status[i] = -1;
+				continue;
+			}
+			
+			
+			socket_fd[i] = socket(AF_INET,SOCK_STREAM,0);
+			FD_SET(socket_fd[i], &connecting_fds);
+			if (socket_fd[i]+1 > max_fd) {
+				max_fd = socket_fd[i]+1;
+			}
+			
+			//set non-blocking
+			int flags = fcntl(socket_fd[i], F_GETFL, 0);
+			fcntl(socket_fd[i], F_SETFL, flags|O_NONBLOCK);
+			
+			// connect
+			
+			struct sockaddr_in client_sin;
+			bzero(&client_sin, sizeof(client_sin));
+			client_sin.sin_family = AF_INET;
+			client_sin.sin_addr = *((struct in_addr *)he->h_addr); 
+			client_sin.sin_port = htons(SERVER_PORT);
+			if(connect(socket_fd[i],(struct sockaddr *)&client_sin,sizeof(client_sin)) == -1)
+			{
+				//perror("connect");
+				switch (errno) {
+					case EALREADY:
+						//cout << "Conecting..."<<endl;
+						break;
+					case ECONNREFUSED:
+						perror("connect");
+						status[i] = -1;
+						break;
+					case EINPROGRESS:
+						//cout << "EINPROGRESS" << endl;
+						break;
+
+					default:
+						perror("connect");
+						break;
+				}
+				
+				status[i]=0;
+			}
+			else {
+				status[i] = 1;
+			}
+			
+			
+		}
+		
+		
+		
+			
+	}
+	
+	
+	bool conti = true;
+		
+	while (conti) {
+		conti = false;
+		fd_set wfds, rfds;
+		FD_ZERO(&wfds);
+		FD_ZERO(&rfds);
+		
+		// setting fd_set's
+		for (int i=0; i<SERVER_NUM; i++) {
+			switch (status[i]) {
+				case 0:  // connecting
+					FD_SET(socket_fd[i], &wfds);
+					conti = true;
+					break;
+
+				case 1:
+					FD_SET(socket_fd[i], &rfds);
+					if (end[i] - begin[i] >0) {
+						FD_SET(socket_fd[i], &wfds);
+					}
+					conti = true;
+					break;
+
+				default:
+					break;
+			}
+		}
+		if(conti)
+			select(max_fd, &rfds, &wfds, NULL, NULL);
+		else {
+			break;
+		}
+
+		
+		for (int i=0; i<SERVER_NUM; i++) {
+			switch (status[i]) {
+				case 0:  // connecting
+				{
+					if (FD_ISSET(socket_fd[i], &wfds)) {
+						status[i]=1;
+					}
+					
+				}
+					
+					break;
+					
+				case 1:
+				{
+					if (FD_ISSET(socket_fd[i], &rfds)){
+						char buff[5000];
+						int r = readline(socket_fd[i], buff, 4999);
+						if (r<0) {
+							perror("read");
+							close(socket_fd[i]);
+							status[i] = -1;
+						}
+						else if (r == 0){
+							close(socket_fd[i]);
+							status[i] = -1;
+						}
+						else {
+							buff[r] = 0;
+							print_column(i,buff);
+						}
+					}
+
+					if (FD_ISSET(socket_fd[i], &wfds)){
+						int w = write(socket_fd[i], write_buffer[i]+begin[i], end[i]-begin[i]);
+						if (w < 0) {
+							perror("write");
+							if (errno == EPIPE) {
+								close(socket_fd[i]);
+								status[i] = -1;
+							}
+						}
+						else {
+							begin[i] += w;
+						}
+
+					}
+				}
+					break;
+					
+				default:
+					break;
+			}
+		}
 	}
 	
 	cout << "</body></html>";
