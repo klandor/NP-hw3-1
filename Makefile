@@ -5,6 +5,7 @@ hw3-1.cgi: hw3-1.o
 
 install: hw3-1.cgi
 	cp hw3-1.cgi ~pldiao/public_html/cgi-bin/
+	cp hw3-1.html ~pldiao/public_html/
 
 push:
 	git push github master

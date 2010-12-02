@@ -116,7 +116,7 @@ int main (int argc, char * const argv[]) {
 	
 	// preparation
 	for (int i=0; i<SERVER_NUM; i++) {
-		if ( args[string("IP")+(char)(i+'1')] == "" || args[string("PORT")+(char)(i+'1')] == "") // invalid address
+		if ( args[string("IP")+(char)(i+'1')] == "" || args[string("PORT")+(char)(i+'1')] == "") // empty address
 			status[i] = -1;
 		else {  // create socket and connect
 			
@@ -152,6 +152,7 @@ int main (int argc, char * const argv[]) {
 			
 			if (he == NULL || SERVER_PORT == 0) {
 				status[i] = -1;
+				print_column(i, "Error: Invalid Address");
 				continue;
 			}
 			
