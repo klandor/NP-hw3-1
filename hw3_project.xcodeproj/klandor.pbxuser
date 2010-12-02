@@ -186,6 +186,8 @@
 			85E8FD8D12A79BB5009A7F0B /* PBXTextBookmark */ = 85E8FD8D12A79BB5009A7F0B /* PBXTextBookmark */;
 			85E8FD9112A79BF1009A7F0B /* PBXTextBookmark */ = 85E8FD9112A79BF1009A7F0B /* PBXTextBookmark */;
 			85E8FD9212A79BF1009A7F0B /* PBXTextBookmark */ = 85E8FD9212A79BF1009A7F0B /* PBXTextBookmark */;
+			85E8FD9712A79D59009A7F0B /* PBXTextBookmark */ = 85E8FD9712A79D59009A7F0B /* PBXTextBookmark */;
+			85E8FD9812A79D59009A7F0B /* PBXTextBookmark */ = 85E8FD9812A79D59009A7F0B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 85E8FB7212A5EDF5009A7F0B /* Source Control */;
 		userBuildSettings = {
@@ -194,8 +196,8 @@
 	08FB7796FE84155DC02AAC07 /* hw3-1.cpp */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {1161, 4563}}";
-			sepNavSelRange = "{5651, 0}";
-			sepNavVisRange = "{5062, 1000}";
+			sepNavSelRange = "{5918, 0}";
+			sepNavVisRange = "{5062, 1064}";
 		};
 	};
 	85E8FB6712A5EDCE009A7F0B /* hw3_project */ = {
@@ -463,7 +465,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 13";
 		rLen = 0;
-		rLoc = 6146;
+		rLoc = 6210;
 		rType = 0;
 		vrLen = 341;
 		vrLoc = 0;
@@ -483,7 +485,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 16";
 		rLen = 0;
-		rLoc = 6120;
+		rLoc = 6184;
 		rType = 0;
 		vrLen = 350;
 		vrLoc = 53;
@@ -1139,7 +1141,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 161";
 		rLen = 0;
-		rLoc = 6059;
+		rLoc = 6123;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 2785;
@@ -1334,7 +1336,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 167";
 		rLen = 0;
-		rLoc = 6059;
+		rLoc = 6123;
 		rType = 0;
 		vrLen = 698;
 		vrLoc = 2758;
@@ -1494,7 +1496,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 244";
 		rLen = 0;
-		rLoc = 5885;
+		rLoc = 5949;
 		rType = 0;
 		vrLen = 805;
 		vrLoc = 3963;
@@ -1514,7 +1516,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 250";
 		rLen = 0;
-		rLoc = 5991;
+		rLoc = 6055;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 3986;
@@ -1624,7 +1626,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 310";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1633,8 +1635,8 @@
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 255";
-		rLen = 9;
-		rLoc = 5539;
+		rLen = 0;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 5108;
@@ -1644,7 +1646,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 311";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1654,7 +1656,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 257";
 		rLen = 0;
-		rLoc = 5727;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 5108;
@@ -1664,7 +1666,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 315";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 210;
@@ -1674,7 +1676,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 259";
 		rLen = 0;
-		rLoc = 5687;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 5108;
@@ -1684,7 +1686,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1694,7 +1696,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 264";
 		rLen = 0;
-		rLoc = 5811;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 964;
 		vrLoc = 5108;
@@ -1704,7 +1706,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 210;
@@ -1714,7 +1716,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 258";
 		rLen = 0;
-		rLoc = 5651;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 944;
 		vrLoc = 5108;
@@ -1724,7 +1726,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 210;
@@ -1734,7 +1736,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 258";
 		rLen = 0;
-		rLoc = 5651;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 5062;
@@ -1744,7 +1746,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6645;
+		rLoc = 6709;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1754,9 +1756,29 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 258";
 		rLen = 0;
-		rLoc = 5651;
+		rLoc = 5505;
 		rType = 0;
 		vrLen = 1000;
+		vrLoc = 5062;
+	};
+	85E8FD9712A79D59009A7F0B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
+		name = "hw3-1.cpp: 316";
+		rLen = 0;
+		rLoc = 6709;
+		rType = 0;
+		vrLen = 312;
+		vrLoc = 210;
+	};
+	85E8FD9812A79D59009A7F0B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
+		name = "hw3-1.cpp: 268";
+		rLen = 0;
+		rLoc = 5918;
+		rType = 0;
+		vrLen = 1064;
 		vrLoc = 5062;
 	};
 	8DD76F620486A84900D96B5E /* hw3_project */ = {

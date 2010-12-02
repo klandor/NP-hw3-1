@@ -251,21 +251,21 @@ int main (int argc, char * const argv[]) {
 						char buff[5000];
 						int r = readline(socket_fd[i], buff, 4999);
 						if (r<0) {
-							switch (r) {
-								case ETIMEDOUT:
-									print_column(i, "Error: Connection timed out");
-									break;
-								case ECONNREFUSED:
-									print_column(i, "Error: Connection refused");
-									break;
-
-								default:
-									perror("read");
-									cout << "errno="<<errno<<endl;
-									break;
-							}
+//							switch (r) {
+//								case ETIMEDOUT:
+//									print_column(i, "Error: Connection timed out");
+//									break;
+//								case ECONNREFUSED:
+//									print_column(i, "Error: Connection refused");
+//									break;
+//
+//								default:
+//									perror("read");
+//									cout << "errno="<<errno<<endl;
+//									break;
+//							}
 							
-							
+							print_column(i, "Connection Error!!");
 							close(socket_fd[i]);
 							status[i] = -1;
 						}
