@@ -8,12 +8,15 @@
 #include <netdb.h>
 #include <fcntl.h>
 #include <errno.h>
-
+#include <signal.h>
+#include <stdlib.h>
+#include <strings.h>
 #define SERVER_NUM 5
 using namespace std;
 
 int readline(int fd,char *ptr,int maxlen)
 {
+	dup2(1,2);
 	int n,rc;
 	char c;
 	*ptr = 0;
@@ -159,7 +162,8 @@ int main (int argc, char * const argv[]) {
 			client_sin.sin_family = AF_INET;
 			client_sin.sin_addr = *((struct in_addr *)he->h_addr); 
 			client_sin.sin_port = htons(SERVER_PORT);
-			if(connect(socket_fd[i],(struct sockaddr *)&client_sin,sizeof(client_sin)) == -1)
+			if(connect(socket_fd[i],(struct sockaddr *)&client_sin,
+				sizeof(client_sin)) == -1)
 			{
 				//perror("connect");
 				switch (errno) {
@@ -256,6 +260,13 @@ int main (int argc, char * const argv[]) {
 							status[i] = -1;
 						}
 						else {
+							if(buff[r-1] == '\n')
+							{
+								r--;
+								if(buff[r-1] == '\r')
+									r--;
+
+							}
 							buff[r] = 0;
 							print_column(i,buff);
 						}
