@@ -28,6 +28,7 @@
 		08FB7796FE84155DC02AAC07 /* hw3-1.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = "hw3-1.cpp"; sourceTree = "<group>"; };
 		85E8FB7512A5EE59009A7F0B /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		85E8FB7612A5EE91009A7F0B /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
+		85E8FD9C12A808A6009A7F0B /* hw3-1.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = "hw3-1.html"; sourceTree = "<group>"; };
 		8DD76F6C0486A84900D96B5E /* hw3_project */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = hw3_project; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6859E8B029090EE04C91782 /* hw3_project.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = hw3_project.1; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -56,6 +57,7 @@
 		08FB7795FE84155DC02AAC07 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				85E8FD9C12A808A6009A7F0B /* hw3-1.html */,
 				08FB7796FE84155DC02AAC07 /* hw3-1.cpp */,
 				85E8FB7512A5EE59009A7F0B /* .gitignore */,
 				85E8FB7612A5EE91009A7F0B /* Makefile */,

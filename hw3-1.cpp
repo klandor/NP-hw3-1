@@ -16,7 +16,7 @@ using namespace std;
 
 int readline(int fd,char *ptr,int maxlen)
 {
-	dup2(1,2);
+	//dup2(1,2);
 	int n,rc;
 	char c;
 	*ptr = 0;
@@ -84,15 +84,26 @@ int main (int argc, char * const argv[]) {
 	map<string,string> args;
 	int status[SERVER_NUM], socket_fd[SERVER_NUM];
 	
+	// get query
+	string query;
+	if (string(getenv("REQUEST_METHOD")) == "GET") {
+		query = getenv("QUERY_STRING");
+	}
+	else {
+		getline(cin, query);
+	}
+
+	
 	// parse query
+	istringstream iss(query);
 	for(int i=0; i<SERVER_NUM*3-1; i++){
-		getline(cin, s1, '=');
-		getline(cin, s2, '&');
+		getline(iss, s1, '=');
+		getline(iss, s2, '&');
 		args[s1] = s2;
 	}
 	
-	getline(cin, s1, '=');
-	if(getline(cin, s2))
+	getline(iss, s1, '=');
+	if(getline(iss, s2))
 		args[s1] = s2;
 	else
 		args[s1] = "";
@@ -268,6 +279,7 @@ int main (int argc, char * const argv[]) {
 							print_column(i, "Connection Error!!");
 							close(socket_fd[i]);
 							status[i] = -1;
+							continue;
 						}
 						else if (r == 0){
 							close(socket_fd[i]);
