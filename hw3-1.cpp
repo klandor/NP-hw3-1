@@ -122,7 +122,7 @@ int main (int argc, char * const argv[]) {
 			
 			
 			cout << "<script>document.all['title"<< i+1 <<"'].innerHTML += \"" << args[string("IP")+(char)(i+'1')]
-				<< ":" << args[string("PORT")+(char)(i+'1')]<< "\";</script>";
+				<< ":" << args[string("PORT")+(char)(i+'1')]<< "\";</script>" << endl;
 			
 			// read the file into the buffer
 			begin[i] = end[i] = 0;
