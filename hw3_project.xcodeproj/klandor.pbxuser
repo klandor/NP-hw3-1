@@ -210,6 +210,8 @@
 			85E8FDB012A81584009A7F0B /* PBXTextBookmark */ = 85E8FDB012A81584009A7F0B /* PBXTextBookmark */;
 			85E8FDB112A81584009A7F0B /* PBXTextBookmark */ = 85E8FDB112A81584009A7F0B /* PBXTextBookmark */;
 			85E8FDB212A81584009A7F0B /* PBXTextBookmark */ = 85E8FDB212A81584009A7F0B /* PBXTextBookmark */;
+			85E8FDB312A87F76009A7F0B /* PBXTextBookmark */ = 85E8FDB312A87F76009A7F0B /* PBXTextBookmark */;
+			85E8FDB412A87F76009A7F0B /* PBXTextBookmark */ = 85E8FDB412A87F76009A7F0B /* PBXTextBookmark */;
 		};
 		sourceControlManager = 85E8FB7212A5EDF5009A7F0B /* Source Control */;
 		userBuildSettings = {
@@ -217,9 +219,9 @@
 	};
 	08FB7796FE84155DC02AAC07 /* hw3-1.cpp */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1161, 4121}}";
-			sepNavSelRange = "{3630, 0}";
-			sepNavVisRange = "{2603, 1431}";
+			sepNavIntBoundsRect = "{{0, 0}, {1161, 4628}}";
+			sepNavSelRange = "{1688, 0}";
+			sepNavVisRange = "{738, 1319}";
 		};
 	};
 	85E8FB6712A5EDCE009A7F0B /* hw3_project */ = {
@@ -298,7 +300,7 @@
 	85E8FB7612A5EE91009A7F0B /* Makefile */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {519, 245}}";
-			sepNavSelRange = "{155, 0}";
+			sepNavSelRange = "{43, 0}";
 			sepNavVisRange = "{0, 236}";
 		};
 	};
@@ -317,7 +319,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 6";
 		rLen = 0;
-		rLoc = 1820;
+		rLoc = 1825;
 		rType = 0;
 		vrLen = 160;
 		vrLoc = 0;
@@ -377,7 +379,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 6";
 		rLen = 0;
-		rLoc = 1820;
+		rLoc = 1825;
 		rType = 0;
 		vrLen = 160;
 		vrLoc = 0;
@@ -397,7 +399,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 8";
 		rLen = 0;
-		rLoc = 1820;
+		rLoc = 1825;
 		rType = 0;
 		vrLen = 249;
 		vrLoc = 0;
@@ -407,7 +409,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 7";
 		rLen = 0;
-		rLoc = 1737;
+		rLoc = 1742;
 		rType = 0;
 		vrLen = 248;
 		vrLoc = 0;
@@ -416,7 +418,7 @@
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 6";
-		rLen = 295;
+		rLen = 300;
 		rLoc = 1542;
 		rType = 0;
 		vrLen = 266;
@@ -426,7 +428,7 @@
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 6";
-		rLen = 295;
+		rLen = 300;
 		rLoc = 1542;
 		rType = 0;
 		vrLen = 266;
@@ -436,7 +438,7 @@
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 6";
-		rLen = 295;
+		rLen = 300;
 		rLoc = 1542;
 		rType = 0;
 		vrLen = 266;
@@ -476,7 +478,7 @@
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 6";
-		rLen = 295;
+		rLen = 300;
 		rLoc = 1542;
 		rType = 0;
 		vrLen = 266;
@@ -487,7 +489,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 13";
 		rLen = 0;
-		rLoc = 6467;
+		rLoc = 6472;
 		rType = 0;
 		vrLen = 341;
 		vrLoc = 0;
@@ -507,7 +509,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 16";
 		rLen = 0;
-		rLoc = 6441;
+		rLoc = 6446;
 		rType = 0;
 		vrLen = 350;
 		vrLoc = 53;
@@ -517,7 +519,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 21";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 319;
 		vrLoc = 232;
@@ -581,7 +583,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 21";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 334;
 		vrLoc = 217;
@@ -591,7 +593,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 30";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 355;
 		vrLoc = 115;
@@ -601,7 +603,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 33";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 397;
 		vrLoc = 115;
@@ -611,7 +613,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 33";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 397;
 		vrLoc = 115;
@@ -621,7 +623,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 33";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 397;
 		vrLoc = 115;
@@ -631,7 +633,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 33";
 		rLen = 0;
-		rLoc = 2373;
+		rLoc = 2378;
 		rType = 0;
 		vrLen = 414;
 		vrLoc = 115;
@@ -650,7 +652,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 35";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 503;
 		vrLoc = 466;
@@ -660,7 +662,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 36";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 541;
 		vrLoc = 468;
@@ -670,7 +672,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 36";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 444;
 		vrLoc = 468;
@@ -680,7 +682,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 517;
@@ -690,7 +692,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 457;
 		vrLoc = 517;
@@ -709,7 +711,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 40";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 556;
@@ -719,7 +721,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 40";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 413;
 		vrLoc = 556;
@@ -733,7 +735,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 40";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 466;
 		vrLoc = 511;
@@ -743,7 +745,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 59";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 4787;
 		rType = 0;
 		vrLen = 856;
 		vrLoc = 553;
@@ -753,7 +755,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 40";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 367;
@@ -763,7 +765,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 65";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 4787;
 		rType = 0;
 		vrLen = 956;
 		vrLoc = 576;
@@ -773,7 +775,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 40";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 367;
@@ -783,7 +785,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 70";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 4787;
 		rType = 0;
 		vrLen = 1143;
 		vrLoc = 605;
@@ -793,7 +795,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 40";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 367;
@@ -803,7 +805,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 67";
 		rLen = 0;
-		rLoc = 4735;
+		rLoc = 4740;
 		rType = 0;
 		vrLen = 1240;
 		vrLoc = 605;
@@ -813,7 +815,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 41";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 386;
@@ -823,7 +825,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 76";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 4787;
 		rType = 0;
 		vrLen = 959;
 		vrLoc = 1011;
@@ -833,7 +835,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 41";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 345;
 		vrLoc = 386;
@@ -843,7 +845,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 80";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 4787;
 		rType = 0;
 		vrLen = 1053;
 		vrLoc = 1011;
@@ -853,7 +855,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 41";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 345;
 		vrLoc = 386;
@@ -863,7 +865,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 80";
 		rLen = 0;
-		rLoc = 4782;
+		rLoc = 4787;
 		rType = 0;
 		vrLen = 1057;
 		vrLoc = 1011;
@@ -873,7 +875,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 442;
 		vrLoc = 218;
@@ -893,7 +895,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -903,7 +905,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 89";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 1091;
 		vrLoc = 1030;
@@ -913,7 +915,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -923,7 +925,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 93";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 1137;
 		vrLoc = 1036;
@@ -933,7 +935,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -943,7 +945,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 93";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 1222;
 		vrLoc = 1036;
@@ -953,7 +955,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -963,7 +965,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 97";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 1228;
 		vrLoc = 1036;
@@ -973,7 +975,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 222;
@@ -983,7 +985,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 59";
 		rLen = 0;
-		rLoc = 3767;
+		rLoc = 3772;
 		rType = 0;
 		vrLen = 1231;
 		vrLoc = 710;
@@ -993,7 +995,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 39";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1003,7 +1005,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 77";
 		rLen = 0;
-		rLoc = 4336;
+		rLoc = 4341;
 		rType = 0;
 		vrLen = 1244;
 		vrLoc = 710;
@@ -1013,7 +1015,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 222;
@@ -1023,7 +1025,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 57";
 		rLen = 0;
-		rLoc = 3528;
+		rLoc = 3533;
 		rType = 0;
 		vrLen = 1343;
 		vrLoc = 643;
@@ -1033,7 +1035,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 222;
@@ -1043,7 +1045,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 60";
 		rLen = 0;
-		rLoc = 3576;
+		rLoc = 3581;
 		rType = 0;
 		vrLen = 1341;
 		vrLoc = 643;
@@ -1053,7 +1055,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1063,7 +1065,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 111";
 		rLen = 0;
-		rLoc = 4525;
+		rLoc = 4530;
 		rType = 0;
 		vrLen = 775;
 		vrLoc = 1911;
@@ -1073,7 +1075,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1083,7 +1085,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 112";
 		rLen = 0;
-		rLoc = 4502;
+		rLoc = 4507;
 		rType = 0;
 		vrLen = 827;
 		vrLoc = 1911;
@@ -1093,7 +1095,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1103,7 +1105,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 111";
 		rLen = 0;
-		rLoc = 4502;
+		rLoc = 4507;
 		rType = 0;
 		vrLen = 843;
 		vrLoc = 1911;
@@ -1113,7 +1115,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1123,7 +1125,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 113";
 		rLen = 0;
-		rLoc = 4502;
+		rLoc = 4507;
 		rType = 0;
 		vrLen = 853;
 		vrLoc = 1911;
@@ -1133,7 +1135,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 222;
@@ -1143,7 +1145,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 102";
 		rLen = 0;
-		rLoc = 4502;
+		rLoc = 4507;
 		rType = 0;
 		vrLen = 848;
 		vrLoc = 1960;
@@ -1153,7 +1155,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 222;
@@ -1163,7 +1165,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 161";
 		rLen = 0;
-		rLoc = 6380;
+		rLoc = 6385;
 		rType = 0;
 		vrLen = 695;
 		vrLoc = 2785;
@@ -1173,7 +1175,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1183,7 +1185,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 134";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 765;
 		vrLoc = 2666;
@@ -1211,7 +1213,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 421;
 		vrLoc = 222;
@@ -1221,7 +1223,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 134";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 791;
 		vrLoc = 2507;
@@ -1231,7 +1233,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 135";
 		rLen = 0;
-		rLoc = 4935;
+		rLoc = 4940;
 		rType = 0;
 		vrLen = 1119;
 		vrLoc = 162;
@@ -1241,7 +1243,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 42";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 443;
 		vrLoc = 222;
@@ -1251,7 +1253,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 144";
 		rLen = 0;
-		rLoc = 4998;
+		rLoc = 5003;
 		rType = 0;
 		vrLen = 822;
 		vrLoc = 2635;
@@ -1261,7 +1263,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 43";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 222;
@@ -1281,7 +1283,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 43";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 222;
@@ -1291,7 +1293,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 166";
 		rLen = 0;
-		rLoc = 5329;
+		rLoc = 5334;
 		rType = 0;
 		vrLen = 741;
 		vrLoc = 2944;
@@ -1301,7 +1303,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 43";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 448;
 		vrLoc = 222;
@@ -1311,7 +1313,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 167";
 		rLen = 0;
-		rLoc = 5329;
+		rLoc = 5334;
 		rType = 0;
 		vrLen = 767;
 		vrLoc = 2944;
@@ -1338,7 +1340,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 43";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 424;
 		vrLoc = 222;
@@ -1348,7 +1350,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 174";
 		rLen = 0;
-		rLoc = 5329;
+		rLoc = 5334;
 		rType = 0;
 		vrLen = 1327;
 		vrLoc = 709;
@@ -1358,7 +1360,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 167";
 		rLen = 0;
-		rLoc = 6380;
+		rLoc = 6385;
 		rType = 0;
 		vrLen = 698;
 		vrLoc = 2758;
@@ -1368,7 +1370,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 76";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 291;
 		vrLoc = 201;
@@ -1388,7 +1390,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 76";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 268;
 		vrLoc = 201;
@@ -1398,7 +1400,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 186";
 		rLen = 0;
-		rLoc = 5369;
+		rLoc = 5374;
 		rType = 0;
 		vrLen = 701;
 		vrLoc = 3146;
@@ -1408,7 +1410,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 81";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 268;
 		vrLoc = 201;
@@ -1428,7 +1430,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 88";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 201;
@@ -1448,7 +1450,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 89";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 201;
@@ -1458,7 +1460,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 149";
 		rLen = 0;
-		rLoc = 4491;
+		rLoc = 4496;
 		rType = 0;
 		vrLen = 946;
 		vrLoc = 1989;
@@ -1468,7 +1470,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 89";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 201;
@@ -1478,7 +1480,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 104";
 		rLen = 0;
-		rLoc = 3097;
+		rLoc = 3102;
 		rType = 0;
 		vrLen = 1273;
 		vrLoc = 1263;
@@ -1488,7 +1490,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 89";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 201;
@@ -1508,7 +1510,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 89";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 201;
@@ -1518,7 +1520,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 244";
 		rLen = 0;
-		rLoc = 6188;
+		rLoc = 6193;
 		rType = 0;
 		vrLen = 805;
 		vrLoc = 3963;
@@ -1528,7 +1530,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 89";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 201;
@@ -1538,7 +1540,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 250";
 		rLen = 0;
-		rLoc = 6312;
+		rLoc = 6317;
 		rType = 0;
 		vrLen = 899;
 		vrLoc = 3986;
@@ -1548,7 +1550,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 92";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 201;
@@ -1568,7 +1570,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 102";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 201;
@@ -1588,7 +1590,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 102";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 201;
@@ -1598,7 +1600,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 107";
 		rLen = 0;
-		rLoc = 2468;
+		rLoc = 2473;
 		rType = 0;
 		vrLen = 1199;
 		vrLoc = 1631;
@@ -1608,7 +1610,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 105";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 273;
 		vrLoc = 201;
@@ -1618,7 +1620,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 123";
 		rLen = 0;
-		rLoc = 3071;
+		rLoc = 3076;
 		rType = 0;
 		vrLen = 1314;
 		vrLoc = 1901;
@@ -1628,7 +1630,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 105";
 		rLen = 0;
-		rLoc = 2245;
+		rLoc = 2250;
 		rType = 0;
 		vrLen = 258;
 		vrLoc = 201;
@@ -1638,7 +1640,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 123";
 		rLen = 0;
-		rLoc = 3071;
+		rLoc = 3076;
 		rType = 0;
 		vrLen = 1295;
 		vrLoc = 1901;
@@ -1648,7 +1650,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 310";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1658,7 +1660,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 255";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 892;
 		vrLoc = 5108;
@@ -1668,7 +1670,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 311";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1678,7 +1680,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 257";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 896;
 		vrLoc = 5108;
@@ -1688,7 +1690,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 315";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 210;
@@ -1698,7 +1700,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 259";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 909;
 		vrLoc = 5108;
@@ -1708,7 +1710,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1718,7 +1720,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 264";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 964;
 		vrLoc = 5108;
@@ -1728,7 +1730,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 210;
@@ -1738,7 +1740,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 258";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 944;
 		vrLoc = 5108;
@@ -1748,7 +1750,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 307;
 		vrLoc = 210;
@@ -1758,7 +1760,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 258";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 955;
 		vrLoc = 5062;
@@ -1768,7 +1770,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1778,7 +1780,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 258";
 		rLen = 0;
-		rLoc = 5744;
+		rLoc = 5749;
 		rType = 0;
 		vrLen = 1000;
 		vrLoc = 5062;
@@ -1788,7 +1790,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 316";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1798,7 +1800,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 268";
 		rLen = 0;
-		rLoc = 6157;
+		rLoc = 6162;
 		rType = 0;
 		vrLen = 1064;
 		vrLoc = 5062;
@@ -1808,7 +1810,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 317";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 312;
 		vrLoc = 210;
@@ -1818,7 +1820,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 271";
 		rLen = 0;
-		rLoc = 6231;
+		rLoc = 6236;
 		rType = 0;
 		vrLen = 1059;
 		vrLoc = 5178;
@@ -1828,7 +1830,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 317";
 		rLen = 0;
-		rLoc = 6966;
+		rLoc = 6971;
 		rType = 0;
 		vrLen = 264;
 		vrLoc = 210;
@@ -1865,7 +1867,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 111";
 		rLen = 0;
-		rLoc = 2291;
+		rLoc = 2296;
 		rType = 0;
 		vrLen = 305;
 		vrLoc = 2119;
@@ -1875,7 +1877,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 300";
 		rLen = 0;
-		rLoc = 6523;
+		rLoc = 6528;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 4731;
@@ -1885,7 +1887,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 111";
 		rLen = 0;
-		rLoc = 2291;
+		rLoc = 2296;
 		rType = 0;
 		vrLen = 305;
 		vrLoc = 2119;
@@ -1915,7 +1917,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 300";
 		rLen = 0;
-		rLoc = 6523;
+		rLoc = 6528;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 4731;
@@ -1935,7 +1937,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 300";
 		rLen = 0;
-		rLoc = 6523;
+		rLoc = 6528;
 		rType = 0;
 		vrLen = 825;
 		vrLoc = 4731;
@@ -1955,7 +1957,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 111";
 		rLen = 0;
-		rLoc = 2291;
+		rLoc = 2296;
 		rType = 0;
 		vrLen = 305;
 		vrLoc = 2119;
@@ -1965,7 +1967,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 155";
 		rLen = 0;
-		rLoc = 3646;
+		rLoc = 3651;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 3367;
@@ -1975,7 +1977,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 155";
 		rLen = 0;
-		rLoc = 3630;
+		rLoc = 3635;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 2603;
@@ -1985,7 +1987,7 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 155";
 		rLen = 0;
-		rLoc = 3646;
+		rLoc = 3651;
 		rType = 0;
 		vrLen = 506;
 		vrLoc = 3367;
@@ -2015,10 +2017,30 @@
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 155";
 		rLen = 0;
-		rLoc = 3630;
+		rLoc = 3635;
 		rType = 0;
 		vrLen = 1431;
 		vrLoc = 2603;
+	};
+	85E8FDB312A87F76009A7F0B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 85E8FB7612A5EE91009A7F0B /* Makefile */;
+		name = "Makefile: 4";
+		rLen = 0;
+		rLoc = 43;
+		rType = 0;
+		vrLen = 236;
+		vrLoc = 0;
+	};
+	85E8FDB412A87F76009A7F0B /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
+		name = "hw3-1.cpp: 77";
+		rLen = 0;
+		rLoc = 1688;
+		rType = 0;
+		vrLen = 1319;
+		vrLoc = 738;
 	};
 	8DD76F620486A84900D96B5E /* hw3_project */ = {
 		activeExec = 0;

@@ -74,7 +74,7 @@ int main (int argc, char * const argv[]) {
 	for (int i=0; i<SERVER_NUM; i++) {
 		cout << "<td valign=\"top\" id=\"m"<<i+1<<"\"></td>";
 	}
-	cout << "\n</table></font>\n";
+	cout << "\n</table></font>"<< endl;
 	
 	
 	string s1,s2;
