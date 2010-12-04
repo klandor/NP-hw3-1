@@ -228,11 +228,14 @@ int main (int argc, char * const argv[]) {
 
 				case 1:
 					FD_SET(socket_fd[i], &rfds);
-					if (end[i] - begin[i] >0) {
-						FD_SET(socket_fd[i], &wfds);
-					}
+
 					conti = true;
 					break;
+				case 2:
+					FD_SET(socket_fd[i], &wfds);
+					conti = true;
+					break;
+
 
 				default:
 					break;
@@ -295,12 +298,45 @@ int main (int argc, char * const argv[]) {
 
 							}
 							buff[r] = 0;
-							print_column(i,buff);
+							
+							
+							if (string(buff) == "% ") {
+								status[i] = 2;
+							}
+							else{
+								print_column(i,buff);
+							}
 						}
 					}
 
+//					if (FD_ISSET(socket_fd[i], &wfds)){
+//						int w = write(socket_fd[i], write_buffer[i]+begin[i], end[i]-begin[i]);
+//						if (w < 0) {
+//							perror("write");
+//							if (errno == EPIPE) {
+//								close(socket_fd[i]);
+//								status[i] = -1;
+//							}
+//						}
+//						else {
+//							begin[i] += w;
+//						}
+//
+//					}
+				}
+					break;
+					
+				case 2: // write command
 					if (FD_ISSET(socket_fd[i], &wfds)){
-						int w = write(socket_fd[i], write_buffer[i]+begin[i], end[i]-begin[i]);
+						int command_length=0;
+						for (int j = begin[i]; j<end[i]; j++) {
+							command_length++;
+							if (write_buffer[i][j] == '\n') {
+								break;
+							}
+						}
+						
+						int w = write(socket_fd[i], write_buffer[i]+begin[i], command_length);
 						if (w < 0) {
 							perror("write");
 							if (errno == EPIPE) {
@@ -309,11 +345,21 @@ int main (int argc, char * const argv[]) {
 							}
 						}
 						else {
+							
+							if (write_buffer[i][begin[i]+command_length-2] == '\r') {
+								write_buffer[i][begin[i]+command_length-2] = 0;
+							}
+							else {
+								write_buffer[i][begin[i]+command_length-1] = 0;
+							}
+
+							print_column(i,"% <b>" + string(write_buffer[i]+begin[i]) + "</b>");
+							
+							
 							begin[i] += w;
 						}
-
+						status[i] = 1;
 					}
-				}
 					break;
 					
 				default:
