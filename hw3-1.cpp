@@ -300,7 +300,13 @@ int main (int argc, char * const argv[]) {
 							buff[r] = 0;
 							
 							
-							if (string(buff) == "% ") {
+							if (string(buff).substr(0,2) == "% ") {
+								string t = string(buff).substr(3);
+								if ( t != "") {
+									print_column(i,t);
+
+								}
+								
 								status[i] = 2;
 							}
 							else{
