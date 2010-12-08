@@ -47,6 +47,8 @@
 		perUserProjectItems = {
 			8518D2B612AFDE7E00E54CAE /* PBXTextBookmark */ = 8518D2B612AFDE7E00E54CAE /* PBXTextBookmark */;
 			8518D2B912AFDE7E00E54CAE /* PBXTextBookmark */ = 8518D2B912AFDE7E00E54CAE /* PBXTextBookmark */;
+			8518D2BE12AFDFD800E54CAE /* PBXTextBookmark */ = 8518D2BE12AFDFD800E54CAE /* PBXTextBookmark */;
+			8518D2BF12AFDFD800E54CAE /* PBXTextBookmark */ = 8518D2BF12AFDFD800E54CAE /* PBXTextBookmark */;
 			854472E012ABE1B00026DA2E = 854472E012ABE1B00026DA2E /* PBXTextBookmark */;
 			854472E112ABE1B00026DA2E = 854472E112ABE1B00026DA2E /* PBXTextBookmark */;
 			854472E212ABE1B00026DA2E = 854472E212ABE1B00026DA2E /* PBXTextBookmark */;
@@ -78,6 +80,26 @@
 		vrLoc = 6262;
 	};
 	8518D2B912AFDE7E00E54CAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
+		name = "hw3-1.cpp: 64";
+		rLen = 62;
+		rLoc = 1045;
+		rType = 0;
+		vrLen = 1317;
+		vrLoc = 677;
+	};
+	8518D2BE12AFDFD800E54CAE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
+		name = "hw3-1.cpp: 304";
+		rLen = 0;
+		rLoc = 6602;
+		rType = 0;
+		vrLen = 653;
+		vrLoc = 6403;
+	};
+	8518D2BF12AFDFD800E54CAE /* PBXTextBookmark */ = {
 		isa = PBXTextBookmark;
 		fRef = 08FB7796FE84155DC02AAC07 /* hw3-1.cpp */;
 		name = "hw3-1.cpp: 64";

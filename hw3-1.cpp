@@ -301,7 +301,7 @@ int main (int argc, char * const argv[]) {
 							
 							
 							if (string(buff).substr(0,2) == "% ") {
-								string t = string(buff).substr(3);
+								string t = string(buff).substr(2);
 								if ( t != "") {
 									print_column(i,t);
 

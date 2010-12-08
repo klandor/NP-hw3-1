@@ -216,7 +216,7 @@
 						<key>_historyCapacity</key>
 						<integer>0</integer>
 						<key>bookmark</key>
-						<string>8518D2B912AFDE7E00E54CAE</string>
+						<string>8518D2BF12AFDFD800E54CAE</string>
 						<key>history</key>
 						<array>
 							<string>854472E212ABE1B00026DA2E</string>
@@ -366,7 +366,7 @@
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>8518D2B612AFDE7E00E54CAE</string>
+										<string>8518D2BE12AFDFD800E54CAE</string>
 										<key>history</key>
 										<array>
 											<string>85E8FB7712A5EF0E009A7F0B</string>
@@ -570,8 +570,12 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
+		<string>8518D2C712AFDFD800E54CAE</string>
+		<string>8518D2C812AFDFD800E54CAE</string>
+		<string>1CD10A99069EF8BA00B06720</string>
 		<string>85E8FB7012A5EDF5009A7F0B</string>
 		<string>85E8FC1012A638D0009A7F0B</string>
+		<string>1C78EAAD065D492600B07095</string>
 		<string>/Users/klandor/Dropbox/Courses/NetworkProgramming/HW3/hw3_project/hw3_project.xcodeproj</string>
 	</array>
 	<key>WindowString</key>
@@ -696,8 +700,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {428, 384}}</string>
-											<string>{{428, 0}, {502, 384}}</string>
+											<string>{{0, 0}, {428, 385}}</string>
+											<string>{{428, 0}, {502, 385}}</string>
 										</array>
 									</dict>
 									<key>VerticalSplitView</key>
@@ -712,8 +716,8 @@
 										<string>yes</string>
 										<key>sizes</key>
 										<array>
-											<string>{{0, 0}, {930, 384}}</string>
-											<string>{{0, 384}, {930, 244}}</string>
+											<string>{{0, 0}, {930, 385}}</string>
+											<string>{{0, 385}, {930, 243}}</string>
 										</array>
 									</dict>
 								</dict>
@@ -746,7 +750,7 @@
 										<real>272</real>
 									</array>
 									<key>Frame</key>
-									<string>{{428, 0}, {502, 384}}</string>
+									<string>{{428, 0}, {502, 385}}</string>
 									<key>RubberWindowFrame</key>
 									<string>187 104 930 669 0 0 1280 778 </string>
 								</dict>
@@ -774,13 +778,13 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1CD10A99069EF8BA00B06720</string>
-				<string>85E8FB8812A5F7A3009A7F0B</string>
+				<string>8518D2C012AFDFD800E54CAE</string>
 				<string>1C162984064C10D400B95A72</string>
-				<string>85E8FB8912A5F7A3009A7F0B</string>
-				<string>85E8FB8A12A5F7A3009A7F0B</string>
-				<string>85E8FB8B12A5F7A3009A7F0B</string>
-				<string>85E8FB8C12A5F7A3009A7F0B</string>
-				<string>85E8FB8D12A5F7A3009A7F0B</string>
+				<string>8518D2C112AFDFD800E54CAE</string>
+				<string>8518D2C212AFDFD800E54CAE</string>
+				<string>8518D2C312AFDFD800E54CAE</string>
+				<string>8518D2C412AFDFD800E54CAE</string>
+				<string>8518D2C512AFDFD800E54CAE</string>
 			</array>
 			<key>ToolbarConfiguration</key>
 			<string>xcode.toolbar.config.debugV3</string>
@@ -944,7 +948,7 @@
 			<key>TableOfContents</key>
 			<array>
 				<string>1C78EAAD065D492600B07095</string>
-				<string>85E8FB8E12A5F7A3009A7F0B</string>
+				<string>8518D2C612AFDFD800E54CAE</string>
 				<string>1C78EAAC065D492600B07095</string>
 			</array>
 			<key>ToolbarConfiguration</key>
