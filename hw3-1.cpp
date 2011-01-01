@@ -89,19 +89,20 @@ int main (int argc, char * const argv[]) {
 	if (string(getenv("REQUEST_METHOD")) == "GET") {
 		query = getenv("QUERY_STRING");
 	}
-	else {
+	else
+	{
 		getline(cin, query);
 	}
 
 	
 	// parse query
 	istringstream iss(query);
-	for(int i=0; i<SERVER_NUM*3-1; i++){
+	for(int i=0; i<SERVER_NUM*5-1; i++){
 		getline(iss, s1, '=');
 		getline(iss, s2, '&');
 		args[s1] = s2;
 	}
-	
+		
 	getline(iss, s1, '=');
 	if(getline(iss, s2))
 		args[s1] = s2;
@@ -117,7 +118,9 @@ int main (int argc, char * const argv[]) {
 	// preparation
 	for (int i=0; i<SERVER_NUM; i++) {
 		if ( args[string("IP")+(char)(i+'1')] == "" || args[string("PORT")+(char)(i+'1')] == "") // empty address
+		{
 			status[i] = -1;
+		}
 		else {  // create socket and connect
 			
 			
@@ -130,6 +133,8 @@ int main (int argc, char * const argv[]) {
 				int fd = open(args[string("FILE")+(char)(i+'1')].c_str(), O_RDONLY);
 				if (fd <0) {
 					print_column(i, "File \"" + args[string("FILE")+(char)(i+'1')] + "\" can not be opened.");
+					status[i] = -1;
+					continue;
 				}
 				else {
 					end[i] = read(fd, write_buffer[i], 50000);
@@ -137,6 +142,8 @@ int main (int argc, char * const argv[]) {
 						print_column(i, "File \"" + args[string("FILE")+(char)(i+'1')] + "\" can not be read.");
 						perror("read");
 						end[i] = 0;
+						status[i] = -1;
+						continue;
 					}
 					close(fd);
 				}
@@ -147,8 +154,8 @@ int main (int argc, char * const argv[]) {
 
 			
 			struct hostent *he = 
-				gethostbyname(args[string("IP")+(char)(i+'1')].c_str());
-			int SERVER_PORT = atoi(args[string("PORT")+(char)(i+'1')].c_str());
+				gethostbyname(args[string("sh")+(char)(i+'1')].c_str());
+			int SERVER_PORT = atoi(args[string("sp")+(char)(i+'1')].c_str());
 			
 			if (he == NULL || SERVER_PORT == 0) {
 				status[i] = -1;
@@ -226,17 +233,19 @@ int main (int argc, char * const argv[]) {
 					conti = true;
 					break;
 
-				case 1:
+				case 1: // read
 					FD_SET(socket_fd[i], &rfds);
-
 					conti = true;
 					break;
-				case 2:
+				case 2: // write
 					FD_SET(socket_fd[i], &wfds);
 					conti = true;
 					break;
-
-
+				case 3: // wait for SOCKS reply
+					FD_SET(socket_fd[i], &rfds);
+					conti = true;
+					break;	
+					
 				default:
 					break;
 			}
@@ -253,7 +262,14 @@ int main (int argc, char * const argv[]) {
 				case 0:  // connecting
 				{
 					if (FD_ISSET(socket_fd[i], &wfds)) {
-						status[i]=1;
+						char cmd[9]= {4,1,0,0,0,0,0,127,0};
+						uint16_t *port = (uint16_t *)(cmd+2);
+						*port = htons(atoi(args[string("PORT")+(char)(i+'1')].c_str()));
+						
+						write(socket_fd[i], cmd, 9);
+						write(socket_fd[i], args[string("IP")+(char)(i+'1')].c_str(), args[string("IP")+(char)(i+'1')].size()+1);
+						
+						status[i]=3; // wait for reply
 					}
 					
 				}
@@ -367,7 +383,25 @@ int main (int argc, char * const argv[]) {
 						status[i] = 1;
 					}
 					break;
-					
+				
+				case 3:
+					if (FD_ISSET(socket_fd[i], &rfds)){
+						char reply[8];
+						read(socket_fd[i], reply, 8);
+						
+						if (reply[0] == 0 && reply[1] == 0x5a) { // accepted
+							status[i] = 1;
+						}
+						else {
+							print_column(i, "SOCKS server connection failed.");
+							status[i] = -1;
+							close(socket_fd[i]);
+
+						}
+
+					}
+					break;
+
 				default:
 					break;
 			}
